@@ -61,6 +61,8 @@ main{
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     box-sizing: border-box;
+
+    margin: auto;
 }
 
 .fundo .desktop{
@@ -239,19 +241,26 @@ p#cargo{
 
 footer{
     background-color: var(--VeryDarkBlue);
-    padding: 50px 0px;
+    padding: 50px 40px;
     font-family: 'Open Sans', sans-serif;
     display: flex;
+    flex-direction: column;
 }
 
+footer svg{
+    margin-bottom: 30px;
+}
 
 footer p{
     color: var(--LightGrayishBlue);    
 }
 
+footer p#telefone{
+    margin-bottom: 15px;
+}
+
 footer p#telefone:before{
     content: url(../images/icon-phone.svg);
-
     margin-right: 15px;
 }
 
@@ -260,12 +269,51 @@ footer p#emailContato:before{
     margin-right: 15px;
 }
 
-footer .contatosEsuporte1{
+footer .contatosEsuporte1, .contatosEsuporte2{
     display: flex;
     flex-direction: column;
+    list-style: none;
+    margin-top: 50px;
 }
 
-footer .contatosEsuporte2{
+footer .contatosEsuporte1 a, .contatosEsuporte2 a{
+    text-decoration: none;
+    color: var(--LightGrayishBlue);
+    padding: 0px;
+}
+
+footer .contatosEsuporte1 a:hover, .contatosEsuporte2 a:hover{
+    color: var(--BrightBlue);
+    transition-duration: 500ms;
+}
+
+footer .redesSociais{
     display: flex;
-    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+
+    margin-top: 50px;
+}
+
+footer .redesSociais svg{
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+
+}
+
+footer .redesSociais path{
+    fill: var(--LightGrayishBlue);
+}
+
+
+footer .redesSociais svg:hover path{
+    border: 1px solid var(--BrightBlue);
+    fill: var(--BrightBlue)
+}
+
+footer .redesSociais svg:hover{
+    border: 1px solid var(--BrightBlue);
 }
