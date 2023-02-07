@@ -1,7 +1,138 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 1100px){
 
+    :root{
+
+
+        --VeryDarkBlue: hsl(243, 87%, 12%);
+        --DesaturatedBlue: hsl(238, 22%, 44%);
+        
+        --BrightBlue: hsl(224, 93%, 58%);
+        --ModerateCyan: hsl(170, 45%, 43%);
+        
+        --LightGrayishBlue: hsl(240, 75%, 98%);
+        --LightGray: hsl(0, 0%, 75%);
+        }
+
+    header{
+        padding: 30px 50px;
+    }
+
+    main{
+        margin: 0px 0px 0px 0px;
+        text-align: none;
+        text-align: left;
+    }
+
+
+    .seçãoArquivos,.seçãoProdução{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+
+
+    }
+
+    .seçãoArquivos, .seçãoProdução{
+        padding-right: 40px;
+    }
+
+    .conteudo{
+        max-width: 600px;
+        
+    }
     
+    .seçãoArquivos{
+        margin-bottom: 150px;
+    }
+    .seçãoArquivos h1{
+        font-size: 2.3em;
+        
+    }
+
+    .seçõesPrincipais h2{
+        font-size: 2.3em;
+        margin: 0px;
+    }
+        
+    .seçõesPrincipais{
+        padding-left: 70px;
+       
+
+    }
+
+    .seçõesPrincipais img{
+        align-self: flex-start;
+        width: 500px;
+    }
+
+    .primeiroEmail{
+        display: flex;
+        gap: 15px;
+    }
+
+    label{
+        text-align: center;
+        width: 150px;
+    }
+
+    input[type=email]{
+        width: 250px;
+    }
+
+    .perfil img{
+        width: 50px;
+    }
+
+    .comoFunciona{
+        margin: 0px;
+        border-bottom: 1px solid green;
+        width: 178.6px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .seçãoAcessToday{
+        display: flex;
+        justify-content: space-between;
+        padding: 80px 70px;
+        align-items: center;
+    }
+
+   .seçãoAcessToday h2{
+        font-size: 2em;
+   }
+
+    .textoAcessToday{
+        width: 500px;
+    }
+
+    .segundoEmail{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .segundoEmail input[type=email]{
+        width: 400px;
+    }
+
+    .segundoEmail label{
+        color: var(--LightGrayishBlue);
+        font-weight: 700;
+    }
+
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        gap: 170px;
+
+        padding: 80px 50px;
+    }
+
+
+
 
 }

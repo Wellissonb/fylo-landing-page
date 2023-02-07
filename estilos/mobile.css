@@ -56,11 +56,9 @@ header ul li a{
 
 
 main{
-
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     box-sizing: border-box;
-
     margin: auto;
 }
 
@@ -156,6 +154,8 @@ label{
 }
 
 .blocoDecitação{    
+
+    width: 330px;
     margin-top: 40px;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.089);
@@ -171,9 +171,7 @@ label{
 
 blockquote:before{
     content: url(../images/icon-quotes.svg);
-   margin-left: -310px;
-
-
+    margin-right: 96%;
 }
 
 .perfil{
