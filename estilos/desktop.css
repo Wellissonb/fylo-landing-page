@@ -1,10 +1,8 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 1100px){
+@media screen and (min-width: 1050px){
 
     :root{
-
-
         --VeryDarkBlue: hsl(243, 87%, 12%);
         --DesaturatedBlue: hsl(238, 22%, 44%);
         
@@ -15,16 +13,25 @@
         --LightGray: hsl(0, 0%, 75%);
         }
 
+
     header{
         padding: 30px 50px;
     }
 
+    .fylo-header-icon{
+        width: 200px;
+    }
+
+    header ul{
+        font-size: 16px;
+        gap: 80px;
+    }
+
     main{
-        margin: 0px 0px 0px 0px;
+        margin: 0px;
         text-align: none;
         text-align: left;
     }
-
 
     .seçãoArquivos,.seçãoProdução{
         display: flex;
@@ -32,22 +39,35 @@
         justify-content: space-between;
 
 
+        padding: 70px 0px;
+        padding-left: 70px;
+        padding-right: 40px;     
+        
     }
 
-    .seçãoArquivos, .seçãoProdução{
-        padding-right: 40px;
+    .ilustração{
+        min-width: 400px;
+        max-width: 600px;
+        align-self: flex-start;
     }
 
     .conteudo{
-        max-width: 600px;
+        max-width: 500px;
+        min-width: 400px;
         
     }
     
     .seçãoArquivos{
-        margin-bottom: 150px;
+        margin-bottom: 30px;
     }
+
     .seçãoArquivos h1{
         font-size: 2.3em;
+        
+    }
+    
+    .seçãoProdução{
+        background-image: url(../images/bg-curve-desktop.svg);
         
     }
 
@@ -56,17 +76,6 @@
         margin: 0px;
     }
         
-    .seçõesPrincipais{
-        padding-left: 70px;
-       
-
-    }
-
-    .seçõesPrincipais img{
-        align-self: flex-start;
-        width: 500px;
-    }
-
     .primeiroEmail{
         display: flex;
         gap: 15px;
@@ -75,6 +84,10 @@
     label{
         text-align: center;
         width: 150px;
+    }
+
+    .segundoEmail label{
+        width: 200px;
     }
 
     input[type=email]{
@@ -98,6 +111,7 @@
         display: flex;
         justify-content: space-between;
         padding: 80px 70px;
+        margin-top: 3;
         align-items: center;
     }
 
@@ -118,11 +132,10 @@
         width: 400px;
     }
 
-    .segundoEmail label{
+    label{
         color: var(--LightGrayishBlue);
         font-weight: 700;
     }
-
 
     footer{
         display: flex;
@@ -131,8 +144,5 @@
 
         padding: 80px 50px;
     }
-
-
-
 
 }
